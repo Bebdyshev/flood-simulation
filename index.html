@@ -46,8 +46,6 @@
 		<div id="intro" class="load">
 			<h1>Disaster Vision</h1>
 			<p>Flood simulation WebApp</p>
-
-			<h3>Scenarios</h3>
 			<span id="scenarios"></span>			
 		</div>
 
@@ -55,42 +53,35 @@
 		<div id="cursorPosition"></div>
 
 		<div id="tools" class="run">
-			<button id="paintObstacles">Paint Obstacles</button>
+			<input type="range" value="0" id="stepsPerFrame" min="0" max="100">
+
 		</div>
 
 		<div id="playback" class="run">
-			<button id="playPause">&#9654;</button>
-			<input type="number" value="0" id="stepsPerFrame">
-			<label for="stepsPerFrame">Simulation Speed</label>
+			<button id="playPause">Start</button>
+			<button id="paintObstacles" style="display: none;">Paint Obstacles</button>
 		</div>
+
 
 		<div id="sidebar" class="run">
 			<h2 id="scenarioName"></h2>
 			<a id="closeScenario" href="index.html">&laquo; Back</a>
 
-			<h3>Gauges</h3>
-
-			<div id="gauges"></div>
-
 			<h3>Simulation Parameters</h3>
 
 			<input id="sourceWaterHeight" type="number" value="0.1" step="0.05"/>
 			<label for="sourceWaterHeight">Source Water Height</label><br>
-
+			<br>
 			<input id="sourceWaterVelocity" type="number" value="0.00001" step="0.01"/>
 			<label for="sourceWaterVelocity">Source Water Velocity</label><br>
+			<br>
+			<input id="gravity" type="number" value="9.81" step="0.001" style="display: none"/>
 
-			<input id="gravity" type="number" value="9.81" step="0.001"/>
-			<label for="gravity">Gravity</label><br><br>
-
-			<input id="manningCoefficient" type="number" value="0.070" step="0.001"/>
-			<label for="manningCoefficient">Manning friction coefficient</label><br><br>
-
-			<input id="drainageAmount" type="number" value="0" step="0.000003"/>
-			<label for="drainageAmount">Drainage</label><br><br>
+			<input id="manningCoefficient" type="number" value="0.070" step="0.001" style="display: none"/>
+			<input id="drainageAmount" type="number" value="0" step="0.000003" style="display: none"/>
 
 			<h3>Visualisation Settings</h3>
-
+			<br>
 			<h4>Overlays</h4>
 
 			<input type="checkbox" id="showFloodDuration">

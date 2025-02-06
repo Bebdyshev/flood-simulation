@@ -66,15 +66,15 @@ var start = function () {
 					var inputValue = document.getElementById("stepsPerFrame").valueAsNumber;
 					if (inputValue){
 						Simulation.parameters.stepsPerFrame = inputValue;
-						this.innerHTML = "&#9646;&#9646;";
+						this.innerHTML = "Stop";
 					} else {
 						document.getElementById("stepsPerFrame").value = 1;
 						Simulation.parameters.stepsPerFrame = 1;
-						this.innerHTML = "&#9646;&#9646;";
+						this.innerHTML = "Stop";
 					}
 				} else {
 					Simulation.parameters.stepsPerFrame = 0;
-					this.innerHTML = "&#9654;";
+					this.innerHTML = "Start";
 				}
 
 			},
