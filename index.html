@@ -49,40 +49,14 @@
 			<p>Anselm Eickhoff, Bachelor Thesis</p>
 
 			<h3>Scenarios</h3>
-			<span id="scenarios"></span>
-
-			<h3>Abstract</h3>
-			<p id="abstract">
-				WebGL offers not only a graphics pipeline for modern web browsers,
-				but can also be used as a simple GPGPU computation environment,
-				making much more sophisticated web applications possible.
-				As a proof-of-concept, <em>WebFlood,</em> a realtime, fully browser
-				based flood simulation and visualisation was implemented.
-				It employs a semi-lagrangian approach to solving the shallow-water equations.
-				All computation is done by GLSL shaders on the GPU. The simulation
-				state is displayed in a 3D visualisation, as part of a web page that
-				allows user interaction with the simulation. WebFlood performs well
-				in the classical 2D dam-break scenario of Fraccarollo and Toro (1995)
-				and closely reproduces urban flooding behaviour of Iowa City (USA),
-				given digital elevation data. Based on its cross-platform compatibility
-				and simple distribution, two main applications are suggested: interactive
-				public flood information and simulation-aided education for the example of hydrology.
-			</p>
-			
-			<h4>Thesis</h4>
-			<p><a href="interactive_shallow_water.pdf">Full Thesis</a> (PDF)</p>
-			<p><a href="interactive_shallow_water_presentation.pdf">Thesis Presentation</a> (PDF)</p>
+			<span id="scenarios"></span>			
 		</div>
 
 		<div id="frameDuration"></div>
 		<div id="cursorPosition"></div>
 
 		<div id="tools" class="run">
-			<button id="addGauge">Add Gauge</button>
 			<button id="paintObstacles">Paint Obstacles</button>
-			<button id="createInundationMap">Create Inundation Map</button>
-			<!--<button id="saveWater">Save Water Height</button>-->
-			<!--<button id="saveTerrain">Save Terrain</button>-->
 		</div>
 
 		<div id="playback" class="run">
